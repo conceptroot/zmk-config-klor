@@ -106,20 +106,21 @@
 
 
         left1_layer {
+            /*        ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+                      │ Tab     │Next song│Vol Down │ Vol UP  │ Pause   │                    │         │  7      │  8      │  9      │         │
+            ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
+            │ Отерзал │ Shift   │ Control │ Option  │ Command │         │                    │         │  4      │  5      │  6      │  0      │ Отрезал │
+            ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+            │ Отерзал │         │ Delete  │Backspace│ ENTER   │ TAB      │                   │         |  1      │  2      │  3      │         │ Отрезал │
+            └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
+                                          │         │         │         │         ││         │         │         │         │  
+                                          └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ Prev song│ Next song│ Vol Down │ Vol UP   │ Pause    │   │ XXXXXX   │  7       │  8       │  9       │  XXXXXX  │
-            &kp TAB   &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP      &none     &kp N7     &kp N8     &kp N9     &none    
-        // &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans     &kp N7     &kp N8     &kp N9     &trans 
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ Shift    │  Control │  Option  │  Command │ XXXXXX   │   │  XXXXXX  │  4       │  5       │  6       │  0       │
-           &kp LSHFT  &kp LCTRL   &kp LALT   &kp LGUI  &none           &none     &kp N4     &kp N5     &kp N6     &kp N0
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  XXXXXX  │  Delete  │Backspace │ ENTER    │ TAB      │   │  XXXXXX  |  1       │  2       │  3       │ XXXXXX   │
-            &none       &kp DEL  &kp BSPC   &kp ENTER  &kp TAB          &none     &kp N1     &kp N2     &kp N3      &none
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+          //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
+                       &kp TAB  &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP                 &none     &kp N7     &kp N8     &kp N9   &none    
+             &none     &kp LSHFT &kp LCTRL &kp LALT  &kp LGUI   &none                         &none     &kp N4     &kp N5     &kp N6   &kp N0    &none
+             &none     &none     &kp DEL   &kp BSPC  &kp ENTER  &kp TAB  &none       &none    &none     &kp N1     &kp N2     &kp N3   &none     &none
+                                           &none     &none      &none    &none       &none    &none     &none      &none
             >;
         };
 
