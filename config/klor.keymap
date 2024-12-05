@@ -80,7 +80,7 @@
             &none      &kp Z      &kp X      &kp C      &kp V      &kp B       &none     &none      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤───────────├────────├───────────├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
         //                      │ хз что  │  LEFT1    │ Пробел+apps          │ хз что │ хз что  │Bcksp+RIGHT2      │ RIGHT1    │
-                                  &none     &mo LEFT1  &mt LS(LC(LALT)) SPACE   &none    &none   &lt RIGHT2 BSPC     &mo RIGHT1 
+                                  &none     &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI  &lt RIGHT2 BSPC     &mo RIGHT1 
         //                      ╰─────────┴──────────┴───────────────────────┴────────┴─────────┴──────────────────┴───────────╯
             >;
         };
@@ -126,7 +126,7 @@
 
         right2_layer {
             /*        ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-                      │  F12    │   F7    │   F8    │   F9    │         │                    │ HOME    │ PAGE DN │ PAGE UP │ END     │         │
+                      │  F12    │   F7    │   F8    │   F9    │         │                    │ HOME    │ PAGE DN │ PAGE UP │ END     │ Insert  │
             ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
             │ Отерзал │  F10    │   F4    │   F5    │   F6    │         │                    │ LEFT    │ DOWN    │ UP      │ RIGHT   │         │ Отрезал │
             ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -136,7 +136,7 @@
                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
             bindings = <
           //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-                       &kp F12   &kp F7    &kp F8    &kp F9    &none                          &kp HOME  &kp PG_DN &kp PG_UP &kp END   &none
+                       &kp F12   &kp F7    &kp F8    &kp F9    &none                          &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp INSERT
              &none     &kp F10   &kp F4    &kp F5    &kp F6    &none                          &kp LARW  &kp DARW  &kp UARW  &kp RARW  &none     &none
              &none     &kp F11   &kp F1    &kp F2    &kp F3    &none     &none      &none     &none     &none     &none     &none     &none     &none
                                            &none     &none     &none     &none      &none     &none     &none     &none
