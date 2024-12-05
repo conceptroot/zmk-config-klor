@@ -37,9 +37,9 @@
 };
 
 / {
-    // combos {
-        // #include "combos.dtsi"
-    // };
+    combos {
+        #include "combos.dtsi"
+    };
 
     behaviors {
         ht: hold_tap {
