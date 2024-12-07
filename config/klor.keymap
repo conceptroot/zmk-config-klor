@@ -24,6 +24,7 @@
 #define LEFT1    2
 #define RIGHT2   3
 #define TRI      4
+#define ONEHAND  5
 
 &lt {
     tapping-term-ms = <250>;
@@ -80,7 +81,7 @@
             &none      &kp Z      &kp X      &kp C      &kp V      &kp B       &none     &none      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤───────────├────────├───────────├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
         //                      │ хз что  │  LEFT1    │ Пробел+apps          │ хз что │ хз что    │Bcksp+RIGHT2   │ RIGHT1     │ пусто │
-                                  &none     &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI   &lt RIGHT2 BSPC  &mo RIGHT1  &none
+                                &mo ONEHAND &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI   &lt RIGHT2 BSPC  &mo RIGHT1  &none
         //                      ╰─────────┴──────────┴───────────────────────┴────────┴───────────┴───────────────┴────────────┴───────╯
             >;
         };
@@ -161,6 +162,25 @@
             &none   &bootloader   &none     &none    &none      &bt BT_CLR &none     &none     &trans    &trans    &trans    &trans   &bootloader  &none
                                             &trans    &trans    &trans   &trans      &trans   &trans    &trans     &trans
 
+            >;
+        };
+
+        onehand_layer {
+            /*        ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+                      │    P    │   O     │   I     │   U     │   Y     │                    │         │         │         │         │         │
+            ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
+            │ Отерзал │    :    │   L     │   K     │   J     │   J     │                    │         │         │         │         │         │ Отрезал │
+            ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+            │ Отерзал │    ?    │   >     │   <     │   M     │   N      │                   │         │         │         │         │         │ Отрезал │
+            └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
+                                          │         │         │         │         ││         │         │         │         │  
+                                          └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
+            bindings = <
+          //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
+                       &kp P     &kp O     &kp I      &kp U    &kp Y                          &none     &none     &none     &none     &none 
+             &none     &kp SEMI  &kp L     &kp K      &kp J    &kp H                          &none     &none     &none     &none     &none     &none
+             &none     &kp FSLH  &kp DOT   &kp COMMA  &kp M    &kp N     &none      &none     &none     &none     &none     &none     &none     &none
+                                           &trans    &trans    &trans   &trans      &trans   &trans    &trans     &trans
             >;
         };
 
