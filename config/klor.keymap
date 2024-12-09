@@ -26,8 +26,15 @@
 #define TRI      4
 #define ONEHAND  5
 
+
 &sensors {
-    triggers-per-rotation = <20>;
+    left_encoder {
+        triggers-per-rotation = <15>;
+    };
+
+    right_encoder {
+        triggers-per-rotation = <15>;
+    };
 };
 
 &lt {
