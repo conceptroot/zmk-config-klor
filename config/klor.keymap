@@ -78,7 +78,7 @@
             &none      &kp A      &kp S      &kp D      &kp F      &kp G                            &kp H      &kp J      &kp K      &kp L     &kp SEMI    &none
         //╭──────────├──────────┼──────────┼──────────┼──────────┼──────────┤╭────────╮╭────────╮ ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────╮
         //│ Отрезал  │  Z       │  X       │  C       │  V       │  B       ││  MUTE  ││PLY/PSE │ │  N       │  M       │ , <      │ . >      │ / ?      │ Отрезал  │
-            &none      &kp Z      &kp X      &kp C      &kp V      &kp B       &none     &none      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &none
+            &none      &kp Z      &kp X      &kp C      &kp V      &kp B      &kp C_PP  &kp C_PP    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤───────────├────────├───────────├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
         //                      │ хз что  │  LEFT1    │ Пробел+apps          │ хз что │ хз что    │Bcksp+RIGHT2   │ RIGHT1     │ пусто │
                                 &mo ONEHAND &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI   &lt RIGHT2 BSPC  &mo RIGHT1  &none
