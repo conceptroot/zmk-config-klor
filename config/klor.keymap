@@ -69,6 +69,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
+            label= "BASE";
             bindings = <
         //           ╭──────────┬──────────┬──────────┬──────────┬──────────╮                     ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //           │  Q       │  W       │  E       │  R       │  T       │                     │  Y       │  U       │  I       │  O       │  P       │
@@ -84,6 +85,7 @@
                                 &mo ONEHAND &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI   &lt RIGHT2 BSPC  &mo RIGHT1  &none
         //                      ╰─────────┴──────────┴───────────────────────┴────────┴───────────┴───────────────┴────────────┴───────╯
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         right1_layer {
