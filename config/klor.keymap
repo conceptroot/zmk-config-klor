@@ -25,6 +25,7 @@
 #define RIGHT2   3
 #define TRI      4
 #define ONEHAND  5
+#define ODIN_C  5
 
 
 &sensors {
@@ -93,7 +94,7 @@
             &none      &kp Z      &kp X      &kp C      &kp V      &kp B      &kp C_PP  &kp C_PP    &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤───────────├────────├───────────├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
         //                      │ хз что  │  LEFT1    │ Пробел+apps          │ хз что │ хз что    │Bcksp+RIGHT2   │ RIGHT1     │ пусто │
-                                &mo ONEHAND &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI   &lt RIGHT2 BSPC  &mo RIGHT1  &none
+                                &mo ODIN_C &mo LEFT1  &mt LS(LC(LALT)) SPACE &kp LGUI  &kp LGUI   &lt RIGHT2 BSPC  &mo RIGHT1  &none
         //                      ╰─────────┴──────────┴───────────────────────┴────────┴───────────┴───────────────┴────────────┴───────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -201,6 +202,43 @@
                                            &trans    &trans    &trans   &trans      &trans   &trans    &trans     &trans
             >;
         };
+
+
+        odin_c_layer {
+            label = "1C"
+            /*        ┌─────────┬───────────┬─────────────────────┬──────────────────────┬───────────────────┐                                     ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+                      │         │           │                     │                      │                   │                                     │         │         │         │         │         │
+            ┌─────────┼─────────┼───────────┼─────────────────────┼──────────────────────┼───────────────────┤                                     ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
+            │ Отерзал │         │           │                     │                      │                   │                                     │         │         │         │         │         │ Отрезал │
+            ├─────────┼─────────┼───────────┼─────────────────────┼──────────────────────┼───────────────────┤╭────────╮                 ╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+            │ Отерзал │         │           │                     │                      │                   │                           │         │         │         │         │         │         │ Отрезал
+            └─────────┴─────────┴───────────┼─────────────────────┼──────────────────────┼───────────────────┼╰────────╯                 ╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
+                                            │                     │                      │                   │         │                 │         │         │         │         │  
+                                            └─────────────────────┴──────────────────────┴───────────────────┴─────────┘                 └─────────┴─────────┴─────────┴─────────┘ */ 
+
+
+
+            bindings = <
+          //╷         ╷         ╷           ╷                     ╷                      ╷                   ╷         ╷                 ╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
+                     &kp LC(TAB) &kp LC(F4)  &kp LC(LS(KP_MINUS))  &kp LC(LS(KP_PLUS))    &kp INS                                                    &none     &none     &none     &none     &none 
+             &none   &kp LA(F12) &kp F12     &none                 &kp LC(F1)             &kp LC(LS(F))                                              &none     &none     &none     &none     &none     &none
+             &none   &none       &none       &none                 &none                  &kp LC(PAUSE_BREAK) &none                       &none      &none     &none     &none     &none     &none     &none
+                                             &trans                &trans                 &trans              &trans                      &trans     &trans    &trans     &trans
+            >;
+
+
+                    // &kp LC(TAB) &kp LC(F4)   &kp LC(LS(KP_MINUS))  &kp INS  &kp LC(PAUSE_BREAK)  &none      &none      &none      &none       &none
+                    // &kp LA(F12) &kp F12     &none              &kp LC(F1) &kp LC(LS(F))   &none      &none      &none      &none       &none
+                    // &none      &none       &none               &none      &none          &none      &none      &none      &none       &none
+                                                    //   &trans     &trans         &trans     &trans
+
+        };
+
+
+
+
+
+
 
     };
 };
