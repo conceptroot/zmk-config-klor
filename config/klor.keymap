@@ -25,7 +25,7 @@
 #define RIGHT2   3
 #define TRI      4
 #define ONEHAND  5
-#define ODIN_C  5
+#define ODIN_C   6 
 
 
 &sensors {
