@@ -57,7 +57,7 @@
 
             bindings
                 = <&kp LS(LC(LA(BSLH)))>
-                , <&kp Z &kp M &kp K>;
+                , <&kp Z &kp M &kp K>
                 // = <&macro_press &kp LSHIFT &kp LALT &kp LCTRL>
                 // , <&macro_tap &kp BSLH>
                 // , <&macro_release &kp LSHIFT &kp LALT &kp LCTRL>
