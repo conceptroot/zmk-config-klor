@@ -54,10 +54,15 @@
         language_macro: language_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
 
             bindings
                 = <&kp LS(LC(LA(BSLH)))>
-                , <&kp Z &kp M &kp K>
+                // , <&kp Z &kp M &kp K>
+
+                , <&kp LA(LSHIFT)>
+
+
                 // = <&macro_press &kp LSHIFT &kp LALT &kp LCTRL>
                 // , <&macro_tap &kp BSLH>
                 // , <&macro_release &kp LSHIFT &kp LALT &kp LCTRL>
