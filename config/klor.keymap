@@ -148,7 +148,7 @@
             ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
             │ Отерзал │ Shift   │ Control │ Option  │ Command │         │                    │         │  4      │  5      │  6      │  0      │ Отрезал │
             ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-            │ Отерзал │         │ Delete  │Backspace│ ENTER   │ TAB      │                   │         |  1      │  2      │  3      │         │ Отрезал │
+            │ Отерзал │         │Backspace│ Delete  │ ENTER   │ TAB      │                   │         |  1      │  2      │  3      │         │ Отрезал │
             └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                           │         │         │         │         ││         │         │         │         │  
                                           └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
@@ -156,7 +156,7 @@
           //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
                        &kp TAB  &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP                 &none     &kp N7     &kp N8     &kp N9   &none    
              &none     &sk LSHFT &sk LCTRL &sk LALT  &sk LGUI   &none                         &none     &kp N4     &kp N5     &kp N6   &kp N0    &none
-             &none     &none     &kp DEL   &kp BSPC  &kp ENTER  &kp TAB  &none       &none    &none     &kp N1     &kp N2     &kp N3   &none     &none
+             &none     &none     &kp BSPC  &kp DEL   &kp ENTER  &kp TAB  &none       &none    &none     &kp N1     &kp N2     &kp N3   &none     &none
                                            &trans    &trans     &trans   &trans      &trans   &trans    &trans     &trans
             >;
         };
